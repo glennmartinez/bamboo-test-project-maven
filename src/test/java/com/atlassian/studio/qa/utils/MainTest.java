@@ -105,4 +105,32 @@ public class MainTest extends TestCase
         }
     }
 
+
+    public void testRubbishGeneration2()
+    {
+        File dir = new File(".");
+        FileFilter fileFilter = new WildcardFileFilter("*.rubbish");
+        File[] files = dir.listFiles(fileFilter);
+        for (int i = 0; i < files.length; i++) {
+           FileUtils.deleteQuietly(files[i]);
+        }
+        
+        File file = new File(RandomStringUtils.randomAlphabetic(9) + ".rubbish");
+        try
+        {
+            FileWriterWithEncoding fileWriterWithEncoding = new FileWriterWithEncoding(file, Charset.defaultCharset());
+            for (int i = 0; i < 100; i++)
+            {
+                fileWriterWithEncoding.append(RandomStringUtils.randomAlphabetic(1024 * 1024));
+            }
+            fileWriterWithEncoding.close();
+        } catch (IOException e)
+        {
+            log.error("Rubbish generation failed dude.", e);
+        }
+    }
+
+
+
+
 }
