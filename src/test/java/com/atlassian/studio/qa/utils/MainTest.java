@@ -72,7 +72,7 @@ public class MainTest extends TestCase
     {
         for (int i = 0; i < 1; i++)
         {
-            log.info("I am just sleeping...");
+            log.info("I am just sleeping...again oh siesta");
             TimeUnit.SECONDS.sleep(5);
         }
 
