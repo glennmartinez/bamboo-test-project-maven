@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.atlassian.pom</groupId>
         <artifactId>atlassian-private-pom</artifactId>
-        <version>23</version>
+        <version>24</version>
     </parent>
     -->
 
