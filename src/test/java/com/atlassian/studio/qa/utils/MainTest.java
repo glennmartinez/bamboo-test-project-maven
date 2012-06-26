@@ -105,7 +105,7 @@ public class MainTest extends TestCase
         }
     }
 
-
+    //super test dudes
     public void testRubbishGeneration2()
     {
         File dir = new File(".");
