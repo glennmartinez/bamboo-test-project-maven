@@ -62,7 +62,7 @@ public class MainTest extends TestCase
         assertEquals("Got it!", responseMsg);
     }
 
-    /**sdfsafsa
+    /**sdfsafsafsdfsdfsd
      * Test if a WADL document is available at the relative path
      * "application.wadl".
      * 
