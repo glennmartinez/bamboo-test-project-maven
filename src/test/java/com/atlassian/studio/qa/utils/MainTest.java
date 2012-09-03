@@ -72,7 +72,8 @@ public class MainTest extends TestCase
     {
         for (int i = 0; i < 1; i++)
         {
-            log.info("I am just sleeping super siesta...again oh siesta");
+            log.info("I am just sleeping super siesta test...again oh siesta");
+
             TimeUnit.SECONDS.sleep(5);
         }
 
