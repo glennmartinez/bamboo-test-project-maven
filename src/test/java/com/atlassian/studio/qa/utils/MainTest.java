@@ -126,7 +126,7 @@ public class MainTest extends TestCase
             fileWriterWithEncoding.close();
         } catch (IOException e)
         {
-            log.error("Rubbish generation failed dude bad boy.", e);
+            log.error("Rubbish generation failed dude bad boy code that again.", e);
         }
     }
 
